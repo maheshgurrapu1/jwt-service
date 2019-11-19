@@ -6,10 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "TBL_USER")
+@Table(name = "TBL_USER", uniqueConstraints = {@UniqueConstraint(columnNames = "username")})
 public class User {
 
   @Id
