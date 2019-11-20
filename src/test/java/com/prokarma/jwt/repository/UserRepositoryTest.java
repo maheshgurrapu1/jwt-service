@@ -25,6 +25,12 @@ class UserRepositoryTest {
     assertThat(user.get().getUsername()).isEqualTo("mahesh");
   }
 
+
+  @Test
+  void testFindByUsername_withNull() {
+    assertThrows(NoSuchElementException.class, () -> userRepository.findByUsername(null).get());
+  }
+
   @Test
   void testFindByUsername_thenThrowNoSuchElementException() {
     assertThrows(NoSuchElementException.class,
