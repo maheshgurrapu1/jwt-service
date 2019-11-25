@@ -14,7 +14,7 @@ public class AuthenticationResponse implements Serializable {
     this.jwtToken = jwtToken;
   }
 
-  public String getToken() {
+  public String getJwtToken() {
     return this.jwtToken;
   }
 }
