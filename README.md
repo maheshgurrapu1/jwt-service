@@ -1,2 +1,2 @@
 # jwt-service
-  JWT Authentication as a searate Service
+  JWT Authentication as a separate Service
